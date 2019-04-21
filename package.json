@@ -1,0 +1,22 @@
+{
+  "name": "not-another-canvas-game",
+  "version": "1.0.0",
+  "description": "yes, it's exactly that, maybe we'll get this one to culmination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ehawk82/not-another-canvas-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ehawk82/not-another-canvas-game/issues"
+  },
+  "homepage": "https://github.com/Ehawk82/not-another-canvas-game#readme",
+  "devDependencies": {
+    "gScript2019": "git+https://github.com/Ehawk82/gScript2019.git"
+  }
+}
