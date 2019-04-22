@@ -1,6 +1,6 @@
 {
   "name": "not-another-canvas-game",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "yes, it's exactly that, maybe we'll get this one to culmination",
   "main": "index.js",
   "scripts": {
