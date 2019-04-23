@@ -1,7 +1,7 @@
 html body {
 	background-color: black;
 	color:lightgrey;
-	overflow: scroll;
+	overflow: hidden;
 	padding: 0;
 	margin: 0;
 	-ms-overflow-style: none;
@@ -13,23 +13,40 @@ html body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: "rbga(0,0,0,0)"; 
+  background: "rgba(0,0,0,0)"; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: "rbga(0,0,0,0)"; 
+  background: "rgba(0,0,0,0)"; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: "rbga(0,0,0,0)"; 
+  background: "rgba(0,0,0,0)"; 
 }
 
 ::-webkit-scrollbar-corner {
-	background: "rbga(0,0,0,0)"; 
+	background: "rgba(0,0,0,0)"; 
 }
 
 canvas {
-	background-color: #FFF;
+}
+.btnHolder_full {
+	transition: 500ms all;
+	position: fixed;
+	bottom: 0;
+	height: 30px;
+	width:100%;
+}
+.btnHolder {
+	transition: 500ms all;
+	position: fixed;
+	bottom: -30px;
+	height: 30px;
+	width:100%;
+}
+#demo {
+	padding: 0;
+	margin: 0;
 }
