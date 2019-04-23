@@ -34,19 +34,29 @@ canvas {
 }
 .btnHolder_full {
 	transition: 500ms all;
+	background-color: #45f;
 	position: fixed;
+	display: flex;
 	bottom: 0;
 	height: 30px;
 	width:100%;
 }
 .btnHolder {
 	transition: 500ms all;
+	background-color: #45f;
 	position: fixed;
 	bottom: -30px;
 	height: 30px;
 	width:100%;
 }
-#demo {
+.btns {
+	height: -webkit-fill-available;
+	width: -webkit-fill-available;
+	padding: 0 auto;
+	margin: 0 5px;
+
+}
+#demo{
 	padding: 0;
 	margin: 0;
 }
