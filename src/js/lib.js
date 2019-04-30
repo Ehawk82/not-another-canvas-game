@@ -8,15 +8,15 @@ var userNACG = {
 		up: {
 			count: 0,
 			polarity: true,
-			enitities: {},
+			entities: {},
 			color: "red"
 		},
 		down: {
             count: 0,
 			polarity: false,
-			enitities: {},
+			entities: {},
 			color: "blue"
-		},
+		}
 	},
 	particle: {
 		proton: {
