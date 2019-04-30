@@ -48,6 +48,7 @@ myUI = {
 		    downQuarksCount = uNACG.quark.down.count;
 
             var ctx = canvas.getContext("2d");
+            var directional;
 
             ctx.clearRect(0,0,cW,cH);
 		for(var i = 0; i < upQuarksCount; i++) {
@@ -57,11 +58,48 @@ myUI = {
 				    posX = uNACG.quark.up.entities[i].posX,
                     posY = uNACG.quark.up.entities[i].posY;
                 
+                
+			var numb = Math.floor((Math.random() * 8) + 1);
+            if (numb === 1) {
+            	uNACG.quark.up.entities[i].posX++;
+            }
+            if (numb === 2) {
+            	uNACG.quark.up.entities[i].posY--;
+
+            }
+            if (numb === 3) {
+            	uNACG.quark.up.entities[i].posX--;
+
+            }
+            if (numb === 4) {
+            	uNACG.quark.up.entities[i].posY++;
+
+            }
+            if (numb === 5) {
+            	uNACG.quark.up.entities[i].posX++;
+            	uNACG.quark.up.entities[i].posY++;
+
+            }
+            if (numb === 6) {
+            	uNACG.quark.up.entities[i].posX--;
+            	uNACG.quark.up.entities[i].posY--;
+
+            }
+            if (numb === 7) {
+            	uNACG.quark.up.entities[i].posX++;
+            	uNACG.quark.up.entities[i].posY--;
+
+            }
+            if (numb === 8) {
+            	uNACG.quark.up.entities[i].posX--;
+            	uNACG.quark.up.entities[i].posY++;
+
+            }
 				ctx.beginPath();
 				ctx.strokeStyle = "gold";
-                ctx.arc(posX, posY, 2, 0, 2 * Math.PI);
+                ctx.arc(posX, posY, 1, 0, 2 * Math.PI);
                 ctx.stroke();
-
+                
 			}else{
 				console.log("no entities");
 			}
@@ -71,23 +109,48 @@ myUI = {
                 var posX = uNACG.quark.down.entities[i].posX,
                     posY = uNACG.quark.down.entities[i].posY;
 
+                var numb = Math.floor((Math.random() * 8) + 1);
+	            if (numb === 1) {
+	            	uNACG.quark.down.entities[i].posX++;
+	            }
+	            if (numb === 2) {
+	            	uNACG.quark.down.entities[i].posY--;
+	            }
+	            if (numb === 3) {
+	            	uNACG.quark.down.entities[i].posX--;
+	            }
+	            if (numb === 4) {
+	            	uNACG.quark.down.entities[i].posY++;
+	            }
+	            if (numb === 5) {
+	            	uNACG.quark.down.entities[i].posX++;
+	            	uNACG.quark.down.entities[i].posY++;
+	            }
+	            if (numb === 6) {
+	            	uNACG.quark.down.entities[i].posX--;
+	            	uNACG.quark.down.entities[i].posY--;
+	            }
+	            if (numb === 7) {
+	            	uNACG.quark.down.entities[i].posX++;
+	            	uNACG.quark.down.entities[i].posY--;
+	            }
+	            if (numb === 8) {
+	            	uNACG.quark.down.entities[i].posX--;
+	            	uNACG.quark.down.entities[i].posY++;
+	            }
 				ctx.beginPath();
 				ctx.strokeStyle = "silver";
-                ctx.arc(posX, posY, 2, 0, 2 * Math.PI);
+                ctx.arc(posX, posY, 1, 0, 2 * Math.PI);
                 ctx.stroke();
 			}else{
 				console.log("no entities");
 			}
 		}
 
-//saveLS("userNACG", uNACG);
+        //saveLS("userNACG", uNACG);
 		setTimeout(function() {
-			//saveLS("userNACG", uNACG);
 			myUI.canvasLoop(cH,cW,uNACG,canvas);
-			
-
-
-		}, 50);
+		}, 150);
 		/*
 		
 		*/
@@ -110,13 +173,11 @@ myUI = {
 				};
 			if(b === 0){
 				if (num === 1) {
-					
 					uNACG.quark.up.entities[uNACG.quark.up.count] = entityMap;
 
 					uNACG.quark.up.count++;
 				} else {
 					uNACG.quark.down.entities[uNACG.quark.down.count] = entityMap;
-					
 
 					uNACG.quark.down.count++;
 				}
