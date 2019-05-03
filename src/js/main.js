@@ -109,7 +109,7 @@ myUI = {
                 var posX = uNACG.quark.down.entities[i].posX,
                     posY = uNACG.quark.down.entities[i].posY;
 
-                var numb = Math.floor((Math.random() * 8) + 1);
+                var numb = Math.floor((Math.random() * 9) + 1);
 	            if (numb === 1) {
 	            	uNACG.quark.down.entities[i].posX++;
 	            }
